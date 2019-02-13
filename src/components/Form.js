@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const StyledForm = styled.form`
+export const StyledForm = styled.form`
   height: 100px;
   width: 100%;
 `;

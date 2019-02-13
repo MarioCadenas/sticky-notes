@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form component should correctly render Form component 1`] = `
+<styled.form
+  onSubmit={[Function]}
+>
+  <styled.input
+    name="note"
+    onChange={[Function]}
+    placeholder="Text for the note"
+    type="text"
+    value=""
+  />
+  <styled.button>
+    Add
+  </styled.button>
+</styled.form>
+`;
