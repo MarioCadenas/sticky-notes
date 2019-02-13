@@ -30,9 +30,7 @@ class Form extends Component {
     }
   }
 
-  handleInputChange = ({ target: { value: text } }) => {
-    this.setState({ text, showError: false });
-  }
+  handleInputChange = ({ target: { value: text } }) => this.setState({ text, showError: false });
 
   handleSubmit = (e) => {
     e.preventDefault();
@@ -48,6 +46,7 @@ class Form extends Component {
 
   render() {
     const { handleSubmit, handleInputChange, state: { text, showError } } = this;
+
     return (
       <StyledForm onSubmit={handleSubmit}>
         {showError && <p>You must provide a text</p>}

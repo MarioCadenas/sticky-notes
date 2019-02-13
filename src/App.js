@@ -35,13 +35,9 @@ class App extends Component {
     this.setState({ notes: this.loadStorage() });
   }
 
-  loadStorage = () => {
-    return JSON.parse(localStorage.getItem('notes')) || [];
-  }
+  loadStorage = () => JSON.parse(localStorage.getItem('notes')) || [];
 
-  updateStorage = (notes) => {
-    localStorage.setItem('notes', JSON.stringify(notes, null, 2));
-  }
+  updateStorage = (notes) => localStorage.setItem('notes', JSON.stringify(notes, null, 2));
 
   addNote = (note) => {
     this.setState(({ notes: oldNotes }) => {
