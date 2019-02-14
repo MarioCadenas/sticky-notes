@@ -19,7 +19,7 @@ const TextContainer = styled.div`
   word-wrap: break-word;
   width: 100%;
 `;
-const RemoveButton = styled.button`
+export const RemoveButton = styled.button`
   background-color: #f3f30c;
   border: none;
   cursor: pointer;

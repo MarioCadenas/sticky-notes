@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component App with empty notes should correctly render with empty notes 1`] = `
+<styled.div>
+  <GlobalStyleComponent />
+  <styled.div>
+    <p>
+      No notes to display.
+    </p>
+  </styled.div>
+  <Form
+    addNote={[Function]}
+  />
+</styled.div>
+`;
+
+exports[`App component App with notes in localStorage should correctly render with notes 1`] = `
+<styled.div>
+  <GlobalStyleComponent />
+  <styled.div>
+    <Note
+      id={0}
+      key="0"
+      removeNote={[Function]}
+      text="test"
+    />
+  </styled.div>
+  <Form
+    addNote={[Function]}
+  />
+</styled.div>
+`;
